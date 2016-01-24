@@ -1,0 +1,155 @@
+@media (max-width: 920px) {
+    #logo {
+        background-size: 800px 106px;
+        width: 800px;
+        height: 106px;
+    }
+
+    #main {
+        width: 800px;
+    }
+
+    nav ul li {
+        padding: 15px 15px 15px 0;
+    }
+        nav ul li:last-child {
+            padding-right: 0;
+        }
+}
+
+@media (max-width: 820px) {
+    #logo {
+        background-size: 600px 80px;
+        width: 600px;
+        height: 80px;
+    }
+
+    #main {
+        width: 600px;
+    }
+
+    nav ul li {
+        padding: 10px 15px 10px 0;
+    }
+        nav ul li:last-child {
+            padding-right: 0;
+        }
+
+    .hidden-medium {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 57%;
+    }
+
+    #logo {
+        background-size: 400px 53px;
+        width: 400px;
+        height: 53px;
+    }
+
+    #main {
+        width: 400px;
+    }
+
+    nav {
+        border: 1px solid #ccc;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+        margin: 30px auto;
+        width: 400px;
+    }
+        nav ul li {
+            border-bottom: 1px solid #bbb;
+            display: block;
+        }
+            nav ul li:last-child {
+                border-bottom: none;
+                padding-right: 0;
+            }
+
+    .hidden-medium {
+        display: inline;
+    }
+
+    .members .media img {
+        display: block;
+        float: none;
+        margin: 0 auto 5px;
+    }
+        .bd-member {
+            padding: 0;
+            text-align: left;
+        }
+        .member-header, .member-sub-header {
+            text-align: center;
+        }
+
+    .icons {
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .bd-long {
+        font-size: 22px;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: 50%;
+    }
+
+    #logo {
+        background-size: 300px 40px;
+        width: 300px;
+        height: 40px;
+    }
+
+    #main {
+        width: 300px;
+    }
+
+    nav {
+        width: 95%;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .bd {
+        height: 60px;
+        padding-left: 20px;
+    }
+        .bd-member {
+            padding: 0;
+        }
+}
+
+/* 320 = iPhone width */
+@media (max-width: 320px) {
+    #logo {
+        background-size: 250px 33px;
+        width: 250px;
+        height: 33px;
+    }
+
+    #main {
+        width: 280px;
+    }
+
+    .media-icon:hover {
+        margin-left: 0;
+    }
+
+    .bd {
+        padding-left: 10px;
+    }
+}

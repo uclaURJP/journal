@@ -1,0 +1,261 @@
+html, body {
+    height: 100%;
+}
+    html {
+        font-size: 62.5%; /* Now, 1rem = 10px */
+        overflow-y: scroll; /* force scroll bar */
+    }
+    body {
+        /*background-image: url("../img/?.png");*/
+        background-color: #f7f5f1;
+        color: #222;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+/* Sticky footer styling: */
+#container {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+footer, #push {
+    height: 50px; /* Needs to be the same amount as #container's margin-bottom */
+}
+    footer {
+        border: 1px solid #bbb;
+        border-right: none;
+        border-left:  none;
+        clear: both;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+        width: 90%;
+    }
+/* End of sticky footer styling: */
+
+header {
+    margin-top: 30px;
+}
+
+#logo {
+    background-image: url("../img/logo.png");
+    background-size: 900px 120px;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 900px;
+    height: 120px;
+}
+
+nav {
+    background-color: #f5f5f5;
+    /* 3px horizontal shadow corresponds to -3px margin-left (this is to hide the shadows on left and right side) */
+    -webkit-box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.3) inset;
+       -moz-box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.3) inset;
+            box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.3) inset;
+    margin-left: -3px;
+    margin-top: 30px;
+    text-align: center;
+}
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+        nav ul li {
+            display: inline-block;
+            padding: 25px 30px 25px 0;
+            text-transform: uppercase;
+        }
+            nav ul li:last-child {
+                padding-right: 0;
+            }
+            nav ul li a {
+                color: #333;
+                font-size: 16px;
+                font-size: 1.6rem;
+                font-weight: 300;
+                text-decoration: none;
+            }
+                nav ul li a.active, nav ul li a:hover {
+                    color: #1274b5;
+                    text-decoration: underline;
+                }
+                    nav ul li a.active:hover {
+                        color: #999;
+                    }
+
+#main {
+    margin: auto;
+    width: 880px;
+}
+
+h1, h2, h3, h4, h5, h6, .bd {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+p {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 2em;
+}
+    .blurb {
+        text-align: justify;
+        margin: 2em 10px;
+    }
+        .call-to-action {
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    font-size: 32px;
+    font-size: 3.2rem;
+    margin-top: 50px;
+}
+
+footer {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.photo-large {
+    -webkit-box-shadow: 2px 2px 5px #000;
+       -moz-box-shadow: 2px 2px 5px #000;
+            box-shadow: 2px 2px 5px #000;
+    display: block;
+    margin: 80px auto;
+    width: 95%;
+}
+
+/* Contact page icons */
+.media, .bd {
+    height: 80px;
+    _overflow:visible;
+    overflow: hidden;
+    zoom: 1;
+}
+    .media {
+        color: #222;
+        display: block;
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+    }
+    .bd {
+        display: table-cell;
+        font-size: 32px;
+        font-size: 3.2rem;
+        padding-left: 25px;
+        vertical-align: middle;
+    }
+
+.media-member, .bd-member {
+    height: auto;
+}
+    .bd-member {
+        font-size: 17px;
+        font-size: 1.7rem;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    .member-header {
+        color: #111;
+        font-size: 26px;
+        font-size: 2.6rem;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    .member-sub-header {
+        color: #333;
+        font-size: 21px;
+        font-size: 2.1rem;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+.members, .icons {
+    margin: 50px auto;
+    list-style: none;
+    padding: 0;
+}
+    .icons {
+        width: 500px;
+    }
+    .icons li, .members li {
+        margin-bottom: 60px;
+    }
+        .members li {
+            padding-left: 1px;
+        }
+        .icons li:last-child, .members li:last-child {
+            margin-bottom: 0;
+        }
+
+.icon {
+    border: 0;
+    border-radius: 100%;
+    color: white;
+    font-size: 32px;
+    font-size: 3.2rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+    .icon.fa-facebook {
+        background: #7490c3;
+    }
+        .media:hover .icon.fa-facebook {
+            background: #829bc9;
+        }
+    .icon.fa-twitter {
+        background: #70aecd;
+    }
+        .media:hover .icon.fa-twitter {
+            background: #7fb7d2;
+        }
+    .icon.fa-envelope, .icon.fa-file, .icon.fa-external-link-square {
+        background: #db6b67;
+    }
+        .media:hover .icon.fa-envelope, .media:hover .icon.fa-file, .media:hover .icon.fa-external-link-square  {
+            background: #df7b77;
+        }
+
+.media .icon, .media img {
+    float: left;
+}
+    .media img {
+        border: 4px solid #fff;
+        -webkit-border-radius: 100%;
+           -moz-border-radius: 100%;
+                border-radius: 100%;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.7);
+           -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.7);
+                box-shadow: 0 1px 1px rgba(0,0,0,0.7);
+        width: 150px;
+        height: 150px;
+    }
+
+.media-icon:hover {
+    cursor: pointer;
+    margin-left: 10px;
+}
+    .media-icon:hover .bd {
+        color: #7490c3;
+        text-decoration: underline;
+    }

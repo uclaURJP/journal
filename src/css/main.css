@@ -114,7 +114,13 @@ p {
             text-align: center;
             text-decoration: underline;
         }
-
+    .table {
+        font-size: 22px;
+        border: 0px;
+    }
+    tr:nth-child(even) {
+    background-color: #FFFFFF;
+    }
 a {
     text-decoration: none;
 }

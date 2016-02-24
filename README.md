@@ -36,3 +36,6 @@ http://127.0.0.1:8000/
 
 If you have any questions, feel free to reach me at [rhansby@gmail.com](rhansby@gmail.com).
 
+## A repo has been set up on GitHub for future users
+
+
